@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_scorecard"
+            android:icon="@drawable/scorecard_drwaer"
+            android:title="Scorecard"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_Setting"
+            android:icon="@drawable/setting_drawer"
+            android:title="Settings"
+            android:visible="false" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:icon="@drawable/share_drawer"
+                android:title="Eğlence" />
+            <item
+                android:id="@+id/nav_sport"
+                android:icon="@drawable/feedback_drawer"
+                android:title="Spor" />
+            <item
+                android:id="@+id/nav_music"
+                android:icon="@drawable/help_drawer"
+                android:title="Müzik"  />
+            <item
+                android:id="@+id/nav_activities"
+                android:icon="@drawable/about_us_drawer"
+                android:title="Etkinliklerim" />
+            <item
+                android:id="@+id/nav_my_joined"
+                android:icon="@drawable/about_us_drawer"
+                android:title="Katıldığım Etkinlikler"  />
+        </menu>
+    </item>
+</menu>

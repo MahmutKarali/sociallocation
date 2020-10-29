@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha=".90"
+    android:background="@drawable/gold_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.application.atplexam.Controller.Login.RegisterController">
+
+    <ImageView
+        android:id="@+id/image_icon"
+        android:layout_width="130dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/welcome_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:maxLength="15"
+        android:text="Reset Password"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/name_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:maxLength="15"
+        android:textAlignment="center"
+        android:textColor="#43c7d6"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_display">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="15dp"
+            android:hint="Email"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#fff"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Send"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

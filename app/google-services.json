@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "360828123771",
+    "firebase_url": "https://atpl-7b002.firebaseio.com",
+    "project_id": "atpl-7b002",
+    "storage_bucket": "atpl-7b002.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360828123771:android:e2e7d0e41f5c9a96dbc0de",
+        "android_client_info": {
+          "package_name": "com.application.atplexam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360828123771-tp6um91r3m731rh8j5l6c24f5igq2m6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRKkNHAPQBZGiFk8gSwFGXeXFnKhFItZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360828123771-tp6um91r3m731rh8j5l6c24f5igq2m6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

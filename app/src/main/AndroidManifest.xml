@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.application.atplexam">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/FullScreen"
+        android:usesCleartextTraffic="true">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.application.atplexam.Controller.Login.SplashController"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.application.atplexam.Controller.Login.LoginController"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.application.atplexam.Controller.Login.RegisterController"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.application.atplexam.Controller.Login.ResetPasswordController"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.application.atplexam.Controller.NavigationController"
+            android:label="Sosyal Etkinlikler"
+            android:parentActivityName="com.application.atplexam.Controller.Login.RegisterController"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.application.atplexam.Controller.Login.RegisterController" />
+        </activity>
+        <activity
+            android:name="com.application.atplexam.Controller.QuestionsController"
+            android:label="Questions"
+            android:parentActivityName="com.application.atplexam.Controller.NavigationController"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.application.atplexam.Controller.NavigationController" />
+        </activity>
+        <activity
+            android:name="com.application.atplexam.Controller.ResultController"
+            android:label="Result" />
+        <activity
+            android:name="com.application.atplexam.Controller.FigureViewController"
+            android:label="FigureView" />
+        <activity
+            android:name="com.application.atplexam.Controller.TestQuestionController"
+            android:label="FigureView" />
+        <activity
+            android:name="com.application.atplexam.Controller.SettingController"
+            android:label="@string/title_activity_setting_activity"
+            android:parentActivityName="com.application.atplexam.Controller.NavigationController"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.application.atplexam.Controller.NavigationController" />
+        </activity>
+
+        <service
+            android:name=".Utility.FirebaseMessagingService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".Controller.Utility.FirebaseInstanceIdService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>
